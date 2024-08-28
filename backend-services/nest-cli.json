@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/multi-app/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/multi-app/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/multi-app",
+  "projects": {
+    "multi-app": {
+      "type": "application",
+      "root": "apps/multi-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/multi-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/multi-app/tsconfig.app.json"
+      }
+    },
+    "apps": {
+      "type": "application",
+      "root": "apps/apps",
+      "entryFile": "main",
+      "sourceRoot": "apps/apps/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/apps/tsconfig.app.json"
+      }
+    },
+    "schedules": {
+      "type": "application",
+      "root": "apps/schedules",
+      "entryFile": "main",
+      "sourceRoot": "apps/schedules/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/schedules/tsconfig.app.json"
+      }
+    },
+    "webhook": {
+      "type": "application",
+      "root": "apps/webhook",
+      "entryFile": "main",
+      "sourceRoot": "apps/webhook/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/webhook/tsconfig.app.json"
+      }
+    },
+    "websocket": {
+      "type": "application",
+      "root": "apps/websocket",
+      "entryFile": "main",
+      "sourceRoot": "apps/websocket/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/websocket/tsconfig.app.json"
+      }
+    }
+  }
+}
