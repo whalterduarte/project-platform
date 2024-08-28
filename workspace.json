@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "web-app": {
+      "path": "frontend/web-app"
+    },
+    "web-admin": {
+      "path": "frontend/web-admin"
+    },
+    "api": {
+      "path": "api"
+    },
+    "backend-services": {
+      "path": "backend-services"
+    }
+  }
+}

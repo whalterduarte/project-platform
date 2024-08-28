@@ -1,0 +1,20 @@
+{
+  "npmScope": "project-platform",
+  "projects": {
+    "web-app": {
+      "tags": []
+    },
+    "web-admin": {
+      "tags": []
+    },
+    "lib-core": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "backend-services": {
+      "tags": []
+    }
+  }
+}
