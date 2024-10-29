@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { WebsocketModule } from './../src/websocket.module';
+import { WebsocketModule } from '../src/websocket.module';
 
 describe('WebsocketController (e2e)', () => {
   let app: INestApplication;
